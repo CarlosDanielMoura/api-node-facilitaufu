@@ -12,7 +12,7 @@ interface IHorarioOnibus {
 }
 
 class HorarioOnibusService {
-  async get_horario_onibus(request: Request, response: Response) {
+  async get_horario_onibus(request: Request, response: Response) {  
     try {
       const horario_onibus_response: AxiosResponse<{
         horarios_onibus: IHorarioOnibus[];
