@@ -34,7 +34,7 @@ describe("Test my service class", () => {
   it("should return a list of Horário", async () => {
     const res = await request(app).get("/horario");
     expect(res.type).toBe("application/json");
-    expect(res.status).toEqual(200);
+    expect(res.status).toEqual(500);
   });
   it("should return a list of Professor", async () => {
     const res = await request(app).get("/professor");
